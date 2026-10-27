@@ -1,0 +1,36 @@
+# M2 (optional): ResNet18 transfer learning with the same two-phase recipe as M1.
+run_name: resnet18
+data_config: configs/data.yaml
+
+model:
+  name: resnet18
+  pretrained: true
+  dropout: 0.3
+
+augment: true
+
+train:
+  seed: 42
+  batch_size: 32
+  weight_decay: 1.0e-4
+  label_smoothing: 0.1
+  class_weights: true
+  amp: true
+  early_stopping:
+    patience: 4
+  phases:
+    - name: head
+      epochs: 5
+      lr: 1.0e-3
+      trainable: head
+      scheduler: none
+    - name: finetune
+      epochs: 15
+      lr: 1.0e-4
+      trainable: last_blocks
+      unfreeze_blocks: 2      # layer3 + layer4
+      scheduler: cosine
+
+output:
+  models_dir: models
+  reports_dir: reports

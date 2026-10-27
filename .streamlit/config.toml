@@ -1,0 +1,13 @@
+# Light and dark variants keep Streamlit's "use system setting" behaviour.
+[theme.light]
+primaryColor = "#1b7f4c"
+
+[theme.dark]
+primaryColor = "#3fb97a"
+
+[server]
+maxUploadSize = 200
+runOnSave = false
+
+[browser]
+gatherUsageStats = false

@@ -1,0 +1,82 @@
+{
+  "n": 2295,
+  "accuracy": 0.6745098039215687,
+  "macro_f1": 0.6294989016980077,
+  "top3_accuracy": 0.9115468409586057,
+  "ece": 0.05279966866788261,
+  "classes_evaluated": [
+    "paper",
+    "cardboard",
+    "plastic",
+    "metal",
+    "glass",
+    "organic",
+    "battery",
+    "textile",
+    "general"
+  ],
+  "per_class": {
+    "paper": {
+      "precision": 0.5870646766169154,
+      "recall": 0.7612903225806451,
+      "f1-score": 0.6629213483146067,
+      "support": 155.0
+    },
+    "cardboard": {
+      "precision": 0.5302325581395348,
+      "recall": 0.8636363636363636,
+      "f1-score": 0.6570605187319885,
+      "support": 132.0
+    },
+    "plastic": {
+      "precision": 0.46923076923076923,
+      "recall": 0.48031496062992124,
+      "f1-score": 0.47470817120622566,
+      "support": 127.0
+    },
+    "metal": {
+      "precision": 0.3284132841328413,
+      "recall": 0.7876106194690266,
+      "f1-score": 0.4635416666666667,
+      "support": 113.0
+    },
+    "glass": {
+      "precision": 0.7582938388625592,
+      "recall": 0.547945205479452,
+      "f1-score": 0.6361829025844931,
+      "support": 292.0
+    },
+    "organic": {
+      "precision": 0.6367924528301887,
+      "recall": 0.9183673469387755,
+      "f1-score": 0.7520891364902507,
+      "support": 147.0
+    },
+    "battery": {
+      "precision": 0.6234567901234568,
+      "recall": 0.7214285714285714,
+      "f1-score": 0.6688741721854304,
+      "support": 140.0
+    },
+    "textile": {
+      "precision": 0.9455040871934605,
+      "recall": 0.636697247706422,
+      "f1-score": 0.7609649122807017,
+      "support": 1090.0
+    },
+    "general": {
+      "precision": 0.4779874213836478,
+      "recall": 0.7676767676767676,
+      "f1-score": 0.5891472868217055,
+      "support": 99.0
+    }
+  },
+  "run_name": "custom_cnn",
+  "model": "custom_cnn",
+  "split": "test",
+  "size_mb": 1.58,
+  "cpu_latency_ms": 11.97,
+  "best_val_macro_f1": 0.6229688787141663,
+  "best_epoch": 28,
+  "git_commit": "unknown"
+}

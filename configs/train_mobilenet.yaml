@@ -1,0 +1,36 @@
+# M1: MobileNetV2 transfer learning, two-phase fine-tuning (PLAN.md Section 7.3).
+run_name: mobilenet_v2
+data_config: configs/data.yaml
+
+model:
+  name: mobilenet_v2
+  pretrained: true
+  dropout: 0.3
+
+augment: true
+
+train:
+  seed: 42
+  batch_size: 32
+  weight_decay: 1.0e-4
+  label_smoothing: 0.1
+  class_weights: true
+  amp: true
+  early_stopping:
+    patience: 4
+  phases:
+    - name: head            # Phase A: backbone frozen
+      epochs: 5
+      lr: 1.0e-3
+      trainable: head
+      scheduler: none
+    - name: finetune        # Phase B: unfreeze the last feature blocks
+      epochs: 15
+      lr: 1.0e-4
+      trainable: last_blocks
+      unfreeze_blocks: 5
+      scheduler: cosine
+
+output:
+  models_dir: models
+  reports_dir: reports

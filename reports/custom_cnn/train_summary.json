@@ -1,0 +1,25 @@
+{
+  "run_name": "custom_cnn",
+  "model": "custom_cnn",
+  "device": "cuda",
+  "amp": true,
+  "epochs_run": 30,
+  "best_epoch": 28,
+  "best_phase": "scratch",
+  "best_val_macro_f1": 0.6229688787141663,
+  "best_val_acc": 0.6700087183958152,
+  "train_minutes": 9.39,
+  "train_images": 6662,
+  "class_weights": [
+    1.0252385349338258,
+    1.1977705861201007,
+    1.2419835943325876,
+    1.3992858643142196,
+    0.6168518518518519,
+    1.0837807060354645,
+    1.1353101567825494,
+    0.6168518518518519,
+    1.6022126022126022
+  ],
+  "checkpoint": "C:\\Users\\Nitro\\OneDrive\\Desktop\\Campus Waste Segregation Assistant\\models\\custom_cnn\\best.pt"
+}

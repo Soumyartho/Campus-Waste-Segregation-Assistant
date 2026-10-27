@@ -1,0 +1,11 @@
+{
+  "run_name": "mobilenet_v2",
+  "temperature": 0.4992,
+  "tau": 0.55,
+  "reject": 0.35,
+  "target_accuracy": 0.97,
+  "coverage_at_tau": 0.974716652136007,
+  "accuracy_at_tau": 0.9700357781753131,
+  "ece_before": 0.1317492987710492,
+  "ece_after": 0.007820606803312034
+}

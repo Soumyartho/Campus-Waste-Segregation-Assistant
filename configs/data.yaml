@@ -1,0 +1,36 @@
+# Data pipeline configuration (PLAN.md Section 5). Paths are relative to the repo root.
+seed: 42
+
+source:
+  kaggle_slug: mostafaabla/garbage-classification   # Kaggle 'Garbage Classification', 12 folders
+  raw_dir: data/raw/garbage_classification
+  trashnet_url: https://github.com/garythung/trashnet/raw/master/data/dataset-resized.zip
+  trashnet_dir: data/raw/trashnet
+  campus_dir: data/campus_test
+
+paths:
+  class_map: configs/class_map.yaml
+  processed_dir: data/processed
+  hashes: data/processed/hashes.csv
+  manifest: data/splits/manifest.csv
+  eda_dir: reports/eda
+
+image_extensions: [".jpg", ".jpeg", ".png", ".bmp", ".webp"]
+
+preprocess:
+  short_side: 288        # images are resized once so training does not decode full-size photos
+  jpeg_quality: 95
+
+dedupe:
+  hash_size: 8           # 64-bit perceptual hash
+  max_distance: 4        # Hamming distance at or below this counts as a near duplicate
+
+split:
+  train: 0.70
+  val: 0.15
+  test: 0.15
+
+max_per_class: 1200      # training-split cap; extra rows are kept in the manifest as 'unused'
+
+loader:
+  num_workers: 4

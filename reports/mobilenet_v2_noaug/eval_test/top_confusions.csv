@@ -1,0 +1,6 @@
+true,pred,count
+glass,metal,14
+glass,plastic,10
+plastic,glass,7
+battery,metal,5
+textile,organic,4

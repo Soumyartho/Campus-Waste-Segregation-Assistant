@@ -1,0 +1,25 @@
+{
+  "run_name": "mobilenet_v2_headonly",
+  "model": "mobilenet_v2",
+  "device": "cuda",
+  "amp": true,
+  "epochs_run": 10,
+  "best_epoch": 6,
+  "best_phase": "head",
+  "best_val_macro_f1": 0.8828886663022367,
+  "best_val_acc": 0.9215344376634699,
+  "train_minutes": 3.74,
+  "train_images": 6662,
+  "class_weights": [
+    1.0252385349338258,
+    1.1977705861201007,
+    1.2419835943325876,
+    1.3992858643142196,
+    0.6168518518518519,
+    1.0837807060354645,
+    1.1353101567825494,
+    0.6168518518518519,
+    1.6022126022126022
+  ],
+  "checkpoint": "C:\\Users\\Nitro\\OneDrive\\Desktop\\Campus Waste Segregation Assistant\\models\\mobilenet_v2_headonly\\best.pt"
+}

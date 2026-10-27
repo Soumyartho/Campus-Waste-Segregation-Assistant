@@ -1,0 +1,19 @@
+{
+  "dataset_root": "C:\\Users\\Nitro\\OneDrive\\Desktop\\Campus Waste Segregation Assistant\\data\\raw\\garbage_classification\\garbage_classification",
+  "dedupe": {
+    "images_in": 15515,
+    "duplicate_groups": 162,
+    "removed_duplicates": 157,
+    "removed_label_conflicts": 62,
+    "images_out": 15296
+  },
+  "cross_split_leaks": 0,
+  "split_sizes": {
+    "train": 6662,
+    "unused": 4045,
+    "test": 2295,
+    "val": 2294
+  },
+  "max_per_class": 1200,
+  "seed": 42
+}

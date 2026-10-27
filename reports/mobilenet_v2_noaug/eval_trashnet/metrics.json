@@ -1,0 +1,61 @@
+{
+  "n": 2527,
+  "accuracy": 0.9157103284527107,
+  "macro_f1": 0.7893412385812262,
+  "top3_accuracy": 0.9449940641076375,
+  "ece": 0.047780723712356574,
+  "classes_evaluated": [
+    "paper",
+    "cardboard",
+    "plastic",
+    "metal",
+    "glass",
+    "general"
+  ],
+  "per_class": {
+    "paper": {
+      "precision": 0.9215070643642073,
+      "recall": 0.9882154882154882,
+      "f1-score": 0.9536961819658814,
+      "support": 594.0
+    },
+    "cardboard": {
+      "precision": 0.9633251833740831,
+      "recall": 0.9776674937965261,
+      "f1-score": 0.9704433497536946,
+      "support": 403.0
+    },
+    "plastic": {
+      "precision": 0.9080234833659491,
+      "recall": 0.9626556016597511,
+      "f1-score": 0.9345417925478349,
+      "support": 482.0
+    },
+    "metal": {
+      "precision": 0.8623655913978494,
+      "recall": 0.9780487804878049,
+      "f1-score": 0.9165714285714286,
+      "support": 410.0
+    },
+    "glass": {
+      "precision": 0.9609053497942387,
+      "recall": 0.9321357285429142,
+      "f1-score": 0.9463019250253293,
+      "support": 501.0
+    },
+    "general": {
+      "precision": 1.0,
+      "recall": 0.0072992700729927005,
+      "f1-score": 0.014492753623188406,
+      "support": 137.0
+    }
+  },
+  "run_name": "mobilenet_v2_noaug",
+  "model": "mobilenet_v2",
+  "split": "trashnet",
+  "size_mb": 9.16,
+  "cpu_latency_ms": 15.14,
+  "best_val_macro_f1": 0.9541653388878648,
+  "best_epoch": 14,
+  "git_commit": "unknown"
+}

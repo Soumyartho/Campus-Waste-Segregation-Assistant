@@ -1,0 +1,28 @@
+# Inference and app configuration (PLAN.md Sections 7.4 and 10).
+model:
+  run_name: mobilenet_v2          # loads models/<run_name>/best.pt
+  models_dir: models
+  device: cpu                     # the app must run on CPU
+
+thresholds:
+  tau: 0.55                       # confident at or above tau (tuned on validation by 'make eval')
+  reject: 0.35                    # below this the image is unrecognised
+  top_k: 3
+
+# Temperature scaling (C2). 1.0 = uncalibrated; 'make eval' fits it on validation.
+temperature: 0.4992
+
+tuning:
+  target_accuracy: 0.97           # tau = lowest threshold whose validation accuracy reaches this
+
+disposal_map: configs/disposal_map.json
+
+# CPU latency measurements in evaluate.py and scripts/benchmark.py use this thread count.
+benchmark:
+  cpu_threads: 4
+
+app:
+  db_path: data/logs/app.db
+  feedback_dir: data/feedback
+  reports_dir: reports
+  max_batch_images: 200

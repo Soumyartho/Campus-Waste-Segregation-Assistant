@@ -1,0 +1,61 @@
+{
+  "n": 2527,
+  "accuracy": 0.9101701622477246,
+  "macro_f1": 0.7853432506609096,
+  "top3_accuracy": 0.9438068856351405,
+  "ece": 0.049491804533906704,
+  "classes_evaluated": [
+    "paper",
+    "cardboard",
+    "plastic",
+    "metal",
+    "glass",
+    "general"
+  ],
+  "per_class": {
+    "paper": {
+      "precision": 0.9396411092985318,
+      "recall": 0.9696969696969697,
+      "f1-score": 0.9544324772162386,
+      "support": 594.0
+    },
+    "cardboard": {
+      "precision": 0.9497607655502392,
+      "recall": 0.9851116625310173,
+      "f1-score": 0.9671132764920828,
+      "support": 403.0
+    },
+    "plastic": {
+      "precision": 0.8661710037174721,
+      "recall": 0.966804979253112,
+      "f1-score": 0.9137254901960784,
+      "support": 482.0
+    },
+    "metal": {
+      "precision": 0.8818380743982495,
+      "recall": 0.9829268292682927,
+      "f1-score": 0.9296424452133795,
+      "support": 410.0
+    },
+    "glass": {
+      "precision": 0.954070981210856,
+      "recall": 0.9121756487025948,
+      "f1-score": 0.9326530612244898,
+      "support": 501.0
+    },
+    "general": {
+      "precision": 1.0,
+      "recall": 0.0072992700729927005,
+      "f1-score": 0.014492753623188406,
+      "support": 137.0
+    }
+  },
+  "run_name": "resnet18",
+  "model": "resnet18",
+  "split": "trashnet",
+  "size_mb": 44.79,
+  "cpu_latency_ms": 22.32,
+  "best_val_macro_f1": 0.9513757811651524,
+  "best_epoch": 16,
+  "git_commit": "unknown"
+}

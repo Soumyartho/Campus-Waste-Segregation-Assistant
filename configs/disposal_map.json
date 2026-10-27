@@ -1,0 +1,180 @@
+{
+  "_meta": {
+    "description": "Disposal recommendations per class (PLAN.md Section 9). Edit bins and wording here; no code changes needed.",
+    "version": 1
+  },
+  "fallbacks": {
+    "uncertain": {
+      "title": "Not sure - check before you throw",
+      "rule": "When in doubt, keep it out of recycling and ask a staff member.",
+      "advice": [
+        "Compare the item with the two most likely categories below.",
+        "If it is dirty, mixed-material or you still cannot tell, use the Black general waste bin.",
+        "Never put anything that might be a battery or electronic item in general waste."
+      ]
+    },
+    "unrecognised": {
+      "title": "Could not recognise this item",
+      "rule": "Please retake the photo.",
+      "advice": [
+        "Place the item on a plain, uncluttered background.",
+        "Make the item fill most of the frame.",
+        "Use good, even lighting and avoid strong shadows or glare.",
+        "Photograph one item at a time."
+      ]
+    }
+  },
+  "classes": {
+    "paper": {
+      "display_name": "Paper",
+      "bin": "Blue",
+      "bin_color": "#1F6FD1",
+      "bin_label": "Dry recyclables",
+      "recyclable": true,
+      "steps": [
+        "Keep it dry and clean",
+        "Remove plastic windows, tape and staples where easy",
+        "Flatten or fold to save space"
+      ],
+      "do_not": [
+        "Do not recycle greasy or food-soiled paper (napkins, pizza paper) - use the Green bin",
+        "Do not include wax-coated or plastic-laminated paper"
+      ],
+      "impact_note": "Recycling paper saves trees, water and energy compared with making new paper."
+    },
+    "cardboard": {
+      "display_name": "Cardboard",
+      "bin": "Blue",
+      "bin_color": "#1F6FD1",
+      "bin_label": "Dry recyclables",
+      "recyclable": true,
+      "steps": [
+        "Flatten boxes completely",
+        "Remove tape, labels and any plastic packing material if possible",
+        "Keep it dry"
+      ],
+      "do_not": [
+        "Do not recycle wet or food-soaked cardboard",
+        "Do not leave polystyrene or bubble wrap inside the box"
+      ],
+      "impact_note": "Flattened, clean cardboard is one of the most valuable recyclables on campus."
+    },
+    "plastic": {
+      "display_name": "Plastic",
+      "bin": "Blue",
+      "bin_color": "#1F6FD1",
+      "bin_label": "Dry recyclables",
+      "recyclable": true,
+      "steps": [
+        "Empty and rinse the container",
+        "Remove the cap and label if possible",
+        "Flatten bottles"
+      ],
+      "do_not": [
+        "Do not put food-soiled plastic in the recycling bin",
+        "Do not include chip packets or multi-layer wrappers - they go in general waste"
+      ],
+      "impact_note": "Clean plastic can be recycled instead of going to landfill."
+    },
+    "metal": {
+      "display_name": "Metal",
+      "bin": "Blue",
+      "bin_color": "#1F6FD1",
+      "bin_label": "Dry recyclables",
+      "recyclable": true,
+      "steps": [
+        "Empty and rinse cans and tins",
+        "Put loose lids inside the can",
+        "Keep aerosol cans separate and only recycle them when fully empty"
+      ],
+      "do_not": [
+        "Do not crush cans with sharp edges by hand",
+        "Do not include batteries or electronics - they go to e-waste"
+      ],
+      "impact_note": "Aluminium and steel can be recycled indefinitely without losing quality."
+    },
+    "glass": {
+      "display_name": "Glass",
+      "bin": "Yellow",
+      "bin_color": "#E0A800",
+      "bin_label": "Glass",
+      "recyclable": true,
+      "steps": [
+        "Empty and rinse bottles and jars",
+        "Remove metal or plastic lids",
+        "Wrap broken glass in paper or cardboard before disposal and label it"
+      ],
+      "do_not": [
+        "Do not handle broken glass with bare hands",
+        "Do not include mirrors, window glass, light bulbs or ceramics"
+      ],
+      "impact_note": "Glass is fully recyclable and remelting it uses less energy than making new glass."
+    },
+    "organic": {
+      "display_name": "Organic / food waste",
+      "bin": "Green",
+      "bin_color": "#2E9E4F",
+      "bin_label": "Wet waste",
+      "recyclable": true,
+      "steps": [
+        "Food scraps, fruit and vegetable peels, tea leaves and garden waste only",
+        "Drain excess liquid first"
+      ],
+      "do_not": [
+        "Do not include plastic bags, wrappers or cutlery",
+        "Do not include cooking oil in large amounts"
+      ],
+      "impact_note": "Separated food waste can be composted instead of producing methane in landfill."
+    },
+    "battery": {
+      "display_name": "Battery",
+      "bin": "Red",
+      "bin_color": "#D23C3C",
+      "bin_label": "Hazardous / e-waste",
+      "recyclable": true,
+      "steps": [
+        "Take it to the campus e-waste collection point",
+        "Tape over the terminals of lithium and 9V batteries",
+        "Keep damaged or swollen batteries separate and tell a staff member"
+      ],
+      "do_not": [
+        "Never put batteries in general waste or recycling bins - they can start fires",
+        "Do not puncture, crush or burn batteries"
+      ],
+      "impact_note": "Batteries contain toxic and valuable metals that can be recovered safely."
+    },
+    "textile": {
+      "display_name": "Textile (clothes and shoes)",
+      "bin": "Donation",
+      "bin_color": "#7A5AC8",
+      "bin_label": "Donation point, otherwise dry waste",
+      "recyclable": true,
+      "steps": [
+        "Donate clean, usable clothes and shoes",
+        "Tie pairs of shoes together",
+        "Put worn-out textiles in a bag in the dry waste bin"
+      ],
+      "do_not": [
+        "Do not donate wet, mouldy or heavily soiled items",
+        "Do not put textiles in the wet waste bin"
+      ],
+      "impact_note": "Reusing one garment avoids the water and energy needed to make a new one."
+    },
+    "general": {
+      "display_name": "General waste",
+      "bin": "Black",
+      "bin_color": "#2B2B2B",
+      "bin_label": "General waste",
+      "recyclable": false,
+      "steps": [
+        "Use this bin only when the item cannot be recycled",
+        "Bag loose waste to keep the bin clean"
+      ],
+      "do_not": [
+        "Do not put batteries, electronics or hazardous items here",
+        "Do not put recyclables here if they can be cleaned"
+      ],
+      "impact_note": "General waste goes to landfill, so it is the last resort."
+    }
+  }
+}

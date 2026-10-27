@@ -1,0 +1,34 @@
+# M0: custom CNN trained from scratch (PLAN.md Sections 7.2 and 7.3).
+run_name: custom_cnn
+data_config: configs/data.yaml
+
+model:
+  name: custom_cnn
+  pretrained: false
+  dropout: 0.4
+  channels: [32, 64, 128, 256]
+
+augment: true
+
+train:
+  seed: 42
+  batch_size: 32
+  weight_decay: 1.0e-4
+  label_smoothing: 0.1
+  class_weights: true
+  amp: true                 # mixed precision, only active on CUDA
+  early_stopping:
+    # Deviation from PLAN.md (patience 4): a from-scratch CNN has noisy validation scores at
+    # lr 1e-3, and patience 4 stopped it at epoch 9 of 30 while training loss was still
+    # falling. A longer patience gives the baseline a fair chance before comparing.
+    patience: 10
+  phases:
+    - name: scratch
+      epochs: 30
+      lr: 1.0e-3
+      trainable: all
+      scheduler: cosine
+
+output:
+  models_dir: models
+  reports_dir: reports

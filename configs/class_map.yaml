@@ -1,0 +1,35 @@
+# Final classes (PLAN.md Section 5.2). The order of keys defines the label index.
+# Each final class lists the source folder names that map onto it. Folder names are
+# matched case-insensitively with '-', '_' and spaces treated as equal, because Kaggle
+# mirrors differ. Remove a class here to drop it; list several folders to merge them.
+classes:
+  paper: [paper]
+  cardboard: [cardboard]
+  plastic: [plastic]
+  metal: [metal]
+  glass: [brown-glass, green-glass, white-glass]
+  organic: [biological]
+  battery: [battery]
+  textile: [clothes, shoes]
+  general: [trash]
+
+# External test sets use the same final class names.
+external:
+  trashnet:
+    cardboard: [cardboard]
+    glass: [glass]
+    metal: [metal]
+    paper: [paper]
+    plastic: [plastic]
+    general: [trash]
+  # The campus set is organised directly by final class name: data/campus_test/<class>/*.jpg
+  campus:
+    paper: [paper]
+    cardboard: [cardboard]
+    plastic: [plastic]
+    metal: [metal]
+    glass: [glass]
+    organic: [organic]
+    battery: [battery]
+    textile: [textile]
+    general: [general]

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+dist/
+
+# Data, models and logs (never commit)
+data/
+models/**/*.pt
+models/**/*.onnx
+*.zip
+
+# Generated YOLO-format dataset and ultralytics runs
+runs/
+yolov8*.pt
+
+# Secrets
+kaggle.json
+.env
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

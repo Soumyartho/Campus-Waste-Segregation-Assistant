@@ -1,0 +1,6 @@
+true,pred,count
+glass,plastic,85
+glass,metal,73
+plastic,glass,45
+paper,battery,39
+general,plastic,31
